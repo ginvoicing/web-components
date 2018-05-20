@@ -23,34 +23,168 @@ declare global {
   interface HTMLAttributes {}
 }
 
+import '@stencil/router';
+
 
 declare global {
 
   namespace StencilComponents {
-    interface MyApp {
+    interface GiApp {
 
     }
   }
 
-  interface HTMLMyAppElement extends StencilComponents.MyApp, HTMLStencilElement {}
+  interface HTMLGiAppElement extends StencilComponents.GiApp, HTMLStencilElement {}
 
-  var HTMLMyAppElement: {
-    prototype: HTMLMyAppElement;
-    new (): HTMLMyAppElement;
+  var HTMLGiAppElement: {
+    prototype: HTMLGiAppElement;
+    new (): HTMLGiAppElement;
   };
   interface HTMLElementTagNameMap {
-    'my-app': HTMLMyAppElement;
+    'gi-app': HTMLGiAppElement;
   }
   interface ElementTagNameMap {
-    'my-app': HTMLMyAppElement;
+    'gi-app': HTMLGiAppElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'my-app': JSXElements.MyAppAttributes;
+      'gi-app': JSXElements.GiAppAttributes;
     }
   }
   namespace JSXElements {
-    export interface MyAppAttributes extends HTMLAttributes {
+    export interface GiAppAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface GiDropdowns {
+
+    }
+  }
+
+  interface HTMLGiDropdownsElement extends StencilComponents.GiDropdowns, HTMLStencilElement {}
+
+  var HTMLGiDropdownsElement: {
+    prototype: HTMLGiDropdownsElement;
+    new (): HTMLGiDropdownsElement;
+  };
+  interface HTMLElementTagNameMap {
+    'gi-dropdowns': HTMLGiDropdownsElement;
+  }
+  interface ElementTagNameMap {
+    'gi-dropdowns': HTMLGiDropdownsElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'gi-dropdowns': JSXElements.GiDropdownsAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface GiDropdownsAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface GiHeader {
+
+    }
+  }
+
+  interface HTMLGiHeaderElement extends StencilComponents.GiHeader, HTMLStencilElement {}
+
+  var HTMLGiHeaderElement: {
+    prototype: HTMLGiHeaderElement;
+    new (): HTMLGiHeaderElement;
+  };
+  interface HTMLElementTagNameMap {
+    'gi-header': HTMLGiHeaderElement;
+  }
+  interface ElementTagNameMap {
+    'gi-header': HTMLGiHeaderElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'gi-header': JSXElements.GiHeaderAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface GiHeaderAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface GiInputs {
+
+    }
+  }
+
+  interface HTMLGiInputsElement extends StencilComponents.GiInputs, HTMLStencilElement {}
+
+  var HTMLGiInputsElement: {
+    prototype: HTMLGiInputsElement;
+    new (): HTMLGiInputsElement;
+  };
+  interface HTMLElementTagNameMap {
+    'gi-inputs': HTMLGiInputsElement;
+  }
+  interface ElementTagNameMap {
+    'gi-inputs': HTMLGiInputsElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'gi-inputs': JSXElements.GiInputsAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface GiInputsAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface GiLeftMenu {
+
+    }
+  }
+
+  interface HTMLGiLeftMenuElement extends StencilComponents.GiLeftMenu, HTMLStencilElement {}
+
+  var HTMLGiLeftMenuElement: {
+    prototype: HTMLGiLeftMenuElement;
+    new (): HTMLGiLeftMenuElement;
+  };
+  interface HTMLElementTagNameMap {
+    'gi-left-menu': HTMLGiLeftMenuElement;
+  }
+  interface ElementTagNameMap {
+    'gi-left-menu': HTMLGiLeftMenuElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'gi-left-menu': JSXElements.GiLeftMenuAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface GiLeftMenuAttributes extends HTMLAttributes {
 
     }
   }
@@ -117,6 +251,39 @@ declare global {
   }
   namespace JSXElements {
     export interface PageHomeAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface PageNotFound {
+
+    }
+  }
+
+  interface HTMLPageNotFoundElement extends StencilComponents.PageNotFound, HTMLStencilElement {}
+
+  var HTMLPageNotFoundElement: {
+    prototype: HTMLPageNotFoundElement;
+    new (): HTMLPageNotFoundElement;
+  };
+  interface HTMLElementTagNameMap {
+    'page-not-found': HTMLPageNotFoundElement;
+  }
+  interface ElementTagNameMap {
+    'page-not-found': HTMLPageNotFoundElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'page-not-found': JSXElements.PageNotFoundAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PageNotFoundAttributes extends HTMLAttributes {
 
     }
   }
