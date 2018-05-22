@@ -62,31 +62,120 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface GiDropdowns {
-
+    interface GiCheckbox {
+      'checked': boolean;
+      'label': string;
+      'name': string;
+      'slider': boolean;
+      'tabindex': number;
+      'toggle': boolean;
     }
   }
 
-  interface HTMLGiDropdownsElement extends StencilComponents.GiDropdowns, HTMLStencilElement {}
+  interface HTMLGiCheckboxElement extends StencilComponents.GiCheckbox, HTMLStencilElement {}
 
-  var HTMLGiDropdownsElement: {
-    prototype: HTMLGiDropdownsElement;
-    new (): HTMLGiDropdownsElement;
+  var HTMLGiCheckboxElement: {
+    prototype: HTMLGiCheckboxElement;
+    new (): HTMLGiCheckboxElement;
   };
   interface HTMLElementTagNameMap {
-    'gi-dropdowns': HTMLGiDropdownsElement;
+    'gi-checkbox': HTMLGiCheckboxElement;
   }
   interface ElementTagNameMap {
-    'gi-dropdowns': HTMLGiDropdownsElement;
+    'gi-checkbox': HTMLGiCheckboxElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'gi-dropdowns': JSXElements.GiDropdownsAttributes;
+      'gi-checkbox': JSXElements.GiCheckboxAttributes;
     }
   }
   namespace JSXElements {
-    export interface GiDropdownsAttributes extends HTMLAttributes {
+    export interface GiCheckboxAttributes extends HTMLAttributes {
+      'checked'?: boolean;
+      'label'?: string;
+      'name'?: string;
+      'slider'?: boolean;
+      'tabindex'?: number;
+      'toggle'?: boolean;
+    }
+  }
+}
 
+
+declare global {
+
+  namespace StencilComponents {
+    interface GiDropdownItem {
+      'active': boolean;
+      'text': string;
+      'value': any;
+    }
+  }
+
+  interface HTMLGiDropdownItemElement extends StencilComponents.GiDropdownItem, HTMLStencilElement {}
+
+  var HTMLGiDropdownItemElement: {
+    prototype: HTMLGiDropdownItemElement;
+    new (): HTMLGiDropdownItemElement;
+  };
+  interface HTMLElementTagNameMap {
+    'gi-dropdown-item': HTMLGiDropdownItemElement;
+  }
+  interface ElementTagNameMap {
+    'gi-dropdown-item': HTMLGiDropdownItemElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'gi-dropdown-item': JSXElements.GiDropdownItemAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface GiDropdownItemAttributes extends HTMLAttributes {
+      'active'?: boolean;
+      'text'?: string;
+      'value'?: any;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface GiDropdown {
+      'name': string;
+      'openOnFocus': boolean;
+      'selection': boolean;
+      'text': string;
+      'value': any;
+    }
+  }
+
+  interface HTMLGiDropdownElement extends StencilComponents.GiDropdown, HTMLStencilElement {}
+
+  var HTMLGiDropdownElement: {
+    prototype: HTMLGiDropdownElement;
+    new (): HTMLGiDropdownElement;
+  };
+  interface HTMLElementTagNameMap {
+    'gi-dropdown': HTMLGiDropdownElement;
+  }
+  interface ElementTagNameMap {
+    'gi-dropdown': HTMLGiDropdownElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'gi-dropdown': JSXElements.GiDropdownAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface GiDropdownAttributes extends HTMLAttributes {
+      'name'?: string;
+      'onInput'?: (event: CustomEvent) => void;
+      'openOnFocus'?: boolean;
+      'selection'?: boolean;
+      'text'?: string;
+      'value'?: any;
     }
   }
 }
@@ -194,30 +283,63 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface PageContact {
+    interface PageCheckboxes {
 
     }
   }
 
-  interface HTMLPageContactElement extends StencilComponents.PageContact, HTMLStencilElement {}
+  interface HTMLPageCheckboxesElement extends StencilComponents.PageCheckboxes, HTMLStencilElement {}
 
-  var HTMLPageContactElement: {
-    prototype: HTMLPageContactElement;
-    new (): HTMLPageContactElement;
+  var HTMLPageCheckboxesElement: {
+    prototype: HTMLPageCheckboxesElement;
+    new (): HTMLPageCheckboxesElement;
   };
   interface HTMLElementTagNameMap {
-    'page-contact': HTMLPageContactElement;
+    'page-checkboxes': HTMLPageCheckboxesElement;
   }
   interface ElementTagNameMap {
-    'page-contact': HTMLPageContactElement;
+    'page-checkboxes': HTMLPageCheckboxesElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'page-contact': JSXElements.PageContactAttributes;
+      'page-checkboxes': JSXElements.PageCheckboxesAttributes;
     }
   }
   namespace JSXElements {
-    export interface PageContactAttributes extends HTMLAttributes {
+    export interface PageCheckboxesAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface PageDropdowns {
+
+    }
+  }
+
+  interface HTMLPageDropdownsElement extends StencilComponents.PageDropdowns, HTMLStencilElement {}
+
+  var HTMLPageDropdownsElement: {
+    prototype: HTMLPageDropdownsElement;
+    new (): HTMLPageDropdownsElement;
+  };
+  interface HTMLElementTagNameMap {
+    'page-dropdowns': HTMLPageDropdownsElement;
+  }
+  interface ElementTagNameMap {
+    'page-dropdowns': HTMLPageDropdownsElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'page-dropdowns': JSXElements.PageDropdownsAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PageDropdownsAttributes extends HTMLAttributes {
 
     }
   }

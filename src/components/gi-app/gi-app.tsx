@@ -21,7 +21,8 @@ export class GIApp {
               <stencil-router>
                   <stencil-route url='/' component='page-home' exact={true} />
                   <stencil-route url='/inputs' component='gi-inputs' />
-                  <stencil-route url='/dropdowns' component='gi-dropdowns' />
+                  <stencil-route url='/dropdowns' component='page-dropdowns' />
+                  <stencil-route url='/checkboxes' component='page-checkboxes' />
               </stencil-router>
               </div>
             </div>
